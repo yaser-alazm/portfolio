@@ -11,7 +11,7 @@
     height: 3px;
     width: 28px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include ease-out;
   }
 
@@ -85,7 +85,7 @@
     }
 
     .portrait {
-      width: 25px;
+      width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
@@ -108,7 +108,7 @@
       text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 300;
-      color: #fff;
+      color: set-text-color($primary-color);
       text-decoration: none;
       @include ease-out;
 
