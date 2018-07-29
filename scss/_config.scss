@@ -1,0 +1,29 @@
+//Global variables
+$primary-color: #484941;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url("../img/background.jpg");
+$background-opacity: 0.9;
+
+//@mixins
+@mixin ease-out {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    background: $home-image;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: rgba($primary-color, $background-opacity);
+    }
+  }
+}
