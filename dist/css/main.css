@@ -145,6 +145,24 @@ main#about {
   background-color: #c4c4c4;
   color: #333; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes .box {
+    border: 3px solid #fff;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease-out; }
+    .boxes .box:hover {
+      background-color: #eece1a;
+      color: #000; }
+      .boxes .box:hover span {
+        color: #000; }
+
 * {
   box-sizing: border-box; }
 
@@ -206,7 +224,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -260,8 +278,15 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3" !important;
     grid-template-columns: 1fr !important; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
