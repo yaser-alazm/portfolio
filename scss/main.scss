@@ -1,6 +1,8 @@
 @import "config";
 @import "menu";
-@import "mobile";
+@import "about";
+@import "work";
+@import "buttons";
 
 //Global styles
 * {
@@ -58,10 +60,9 @@ header {
   color: set-text-color($primary-color);
 }
 //main
-
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px);
+  height: 100%;
 
   .icons {
     margin-top: 1rem;
@@ -81,4 +82,4 @@ main {
   }
 }
 
-@import "about";
+@import "mobile";

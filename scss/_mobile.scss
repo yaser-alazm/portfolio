@@ -1,10 +1,16 @@
 //Widescreens
 
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 //Desktops & Laptops
 
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 //Tablets & small laptops
 
@@ -16,9 +22,12 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      font-size: 5.5rem;
     }
   }
-
+  main#about .lg-heading {
+    font-size: 5rem;
+  }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -33,7 +42,9 @@
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    a.nav-link {
+      font-size: 24px !important;
+    }
   }
 
   .menu-branding {
@@ -54,9 +65,13 @@
       "bio"
       "job1"
       "job2"
-      "job3";
+      "job3" !important;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -64,5 +79,8 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
