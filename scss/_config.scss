@@ -1,8 +1,8 @@
 //Global variables
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: rgba(70, 66, 66, 0.7);
+$secondary-color: #00d8ff;
 $show-home-image: true;
-$home-image: url("../img/background.jpg");
+$home-image: url('../img/background.jpg');
 $background-opacity: 0.7;
 
 //@mixins
@@ -18,7 +18,7 @@ $background-opacity: 0.7;
       background-size: cover;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
